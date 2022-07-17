@@ -8,7 +8,7 @@ function countdownDate(){
     const currentDate = new Date()
     const weddingDate = new Date(2022, 6, 9, 16, 30);   
 
-    const accurateDays = ((currentDate - weddingDate) / (1000 * 60 * 60 * 24));
+    const accurateDays = ((weddingDate - currentDate) / (1000 * 60 * 60 * 24));
     const accurateHours = ((accurateDays - Math.floor(accurateDays)) * 24);
     const accurateMinutes = ((accurateHours - Math.floor(accurateHours)) * 60);
     const accurateSeconds = ((accurateMinutes - Math.floor(accurateMinutes)) * 60);
